@@ -143,7 +143,7 @@ Deliver a concise, interactive dashboard answering:
 ---
 
 ## Image Preview
-![Dashboard Overview](Data Professional Survey Breakdown Image.jpg)
+![Dashboard Overview](Data%20Professional%20Survey%20Breakdown%20Image.jpg)
 
 ---
 
