@@ -94,51 +94,36 @@ Deliver a concise, interactive dashboard answering:
 ---
 
 ## How to Use
-1. Install **Power BI Desktop** (`<Version: e.g., 2.1.x or later>`).
+1. Install **Power BI Desktop** (`Version: 2.1.x or later`).
 2. Clone or download this repository.
-3. Open `<filename.pbix>` (or `<filename.pbit>` and connect to data at `<path/connection details>`).
+3. Open `Data Professional Survey Breakdown.pbit`.
 4. Refresh the data: **Home → Refresh**.
 
 ---
 
 ## Data Connections
-- **Local file:** `<relative path>` (e.g., `data/survey.csv`)  
-- **Parameters (if used):**  
-  - `FilePath = <your local path>`  
-  - `Currency = <USD/GBP/INR/etc.>`
-
----
-
-## Repository Structure
-├─ data/
-│ └─ survey.csv # <Replace/remove if not public>
-├─ images/
-│ └─ dashboard_overview.png # Used in README
-├─ src/ # Optional preprocessing
-│ ├─ preprocessing.sql
-│ └─ preprocess.ipynb
-├─ <project>.pbix or <project>.pbit
-└─ README.md
+- **Local file:** `Data Professional Survey Data.xlsx` 
+- **Parameters:**  
+  - `Currency = USD`
 
 ---
 
 ## Methodology and Cleaning
 - **Deduplication:** Unique respondents identified by `UniqueID`.
-- **Salary handling:** Currency normalized to `<Currency>`; outliers capped at `<method/percentile>`.
-- **Missing values:** `<method>` (e.g., imputed/excluded).
+- **Salary handling:** Currency normalized to `USD($)`.
 - **Role categories:** Standardized to listed roles; “Other” groups low-frequency titles.
 - **Country grouping:** Top countries shown; remaining grouped as “Others”.
-- **Age:** Validated within `<min–max>` bounds.
+- **Age:** Validated within `<18-100>` bounds.
 
 ---
 
 ## Key Insights
-- **Geography:** `<e.g., <%> from United States; India and UK follow>`  
-- **Roles and pay:** `<e.g., Data Architect highest avg salary at <Currency><X>; Student/Looking lowest at <Currency><Y>>`  
-- **Skills:** `<e.g., Python dominates across roles; R concentrated among Analysts/Scientists>`  
-- **Gender gap:** `<e.g., Avg difference of <Currency><Z> or <Q%>>`  
-- **Satisfaction:** `<e.g., WLB <X.X>/10 vs Pay <Y.Y>/10>`  
-- **Demographics:** `<e.g., Average age <A>; N respondents <N>>`
+- **Geography:** `43% of survey respondents were from the United States, followed by "Other" countries and India.`  
+- **Roles and pay:** `Data Scientist has highest avg salary at $94,000; Student/Looking lowest at $28,000.`  
+- **Skills:** `Python dominates across roles.`  
+- **Gender gap:** `Avg difference of $2,000 (female salaries ~3.7% higher).`  
+- **Satisfaction:** `WLB 5.7/10 vs Pay 4.2/10.`  
+- **Demographics:** `Average age 29.`
 
 ---
 
@@ -147,43 +132,16 @@ Deliver a concise, interactive dashboard answering:
 
 ---
 
-## How to Cite on Resume/Portfolio
-**Repo link:** `<https://github.com/<user>/<repo>>`  
-**Tagline:** Built a Power BI dashboard analyzing `<N>` data professionals across `<#>` countries; delivered salary benchmarks by role/gender and skills adoption insights.
-
----
-
-## Limitations
-- Self-reported data may include bias and inaccuracies.
-- Sample may be skewed toward `<region/role>`.
-- Currency conversions and outlier treatment may affect exact salary values.
-- Not all roles/languages equally represented.
-
----
-
-## Future Enhancements
-- Add filters: region, experience level, education.
-- Normalize salaries by experience/industry.
-- Trend analysis if multi-year data is available.
-- Role-specific deep dives; consider RLS for shared deployments.
-- Publish to Power BI Service and share a read-only link.
-
----
-
 ## Getting Started Quickly
-- **Prerequisites:** Power BI Desktop `<version>`
-- **Estimated setup time:** `<minutes>`
-- **Test data sample included:** `<Yes/No>`; if No, provide instructions to connect to your copy.
+- **Prerequisites:** Power BI Desktop `2.1.x or later`
+- **Estimated setup time:** `5 minutes`
+- **Test data sample included:** `Yes`.
 
 ---
 
 ## License
-`<MIT/Apache-2.0/Other or “No license”>`
+`No license`
 
 ---
 
-## Credits
-- **Data:** `<Source/Organization>`
-- **Inspiration/References:** `<Any guides or repos>`
-
-**Author:** `<Your Name>` — `<Email>` — `<LinkedIn>` — `<GitHub>`
+**Author:** `Abhishek Chattaraj` — [Email](mailto:abhishekchattarajj@gmail.com) — [LinkedIn](https://www.linkedin.com/in/abhishek-chattaraj-b25a78125) — [GitHub](https://github.com/abhishekchattaraj)
